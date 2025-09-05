@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://co46vd10vxpi3"]
+
+[ext_resource type="AudioStream" uid="uid://b3s5iibbr4cre" path="res://assets/sounds/jerry bingbong world1.mp3" id="1_q3ysb"]
+
+[node name="Theme" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_q3ysb")
+volume_db = 20.115
+autoplay = true
+bus = &"Music"

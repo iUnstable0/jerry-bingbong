@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfkp12p1fue55"
+path="res://.godot/imported/the abyss wherein milq starts you on your encounter v1.mp3-1c6bd3f269b5b32ba180882f9c419636.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/the abyss wherein milq starts you on your encounter v1.mp3"
+dest_files=["res://.godot/imported/the abyss wherein milq starts you on your encounter v1.mp3-1c6bd3f269b5b32ba180882f9c419636.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

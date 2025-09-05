@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3s5iibbr4cre"
+path="res://.godot/imported/jerry bingbong world1.mp3-efa3ce903c6cd88873b89ca556970f74.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/jerry bingbong world1.mp3"
+dest_files=["res://.godot/imported/jerry bingbong world1.mp3-efa3ce903c6cd88873b89ca556970f74.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,126 @@
+[gd_scene load_steps=10 format=3 uid="uid://bwe6binq3ap70"]
+
+[ext_resource type="FontFile" uid="uid://b8b6kk8jlovu2" path="res://assets/fonts/PixelifySans-VariableFont_wght.ttf" id="1_rk22q"]
+[ext_resource type="Script" uid="uid://x25ps8wcaop7" path="res://scenes/main_menu.gd" id="1_u4kki"]
+[ext_resource type="Texture2D" uid="uid://bt0vdhlu1o11y" path="res://assets/images/milk.jpeg" id="2_xg1py"]
+[ext_resource type="FontFile" uid="uid://dwvkl4hd8uf7h" path="res://assets/fonts/LibertinusSerifDisplay-Regular.ttf" id="4_0u6b5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ismwm"]
+texture = ExtResource("2_xg1py")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0u6b5"]
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hf3n6"]
+bg_color = Color(0.232253, 0.524908, 0.730916, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4kki"]
+bg_color = Color(0.329687, 0.630449, 0.852657, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xg1py"]
+bg_color = Color(0.231373, 0.52549, 0.729412, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="Main-menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+script = ExtResource("1_u4kki")
+metadata/_edit_use_anchors_ = true
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.7778
+stretch_mode = 3
+
+[node name="Panel" type="Panel" parent="AspectRatioContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ismwm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = -19.0
+offset_right = 169.0
+offset_bottom = 203.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_rk22q")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/focus = SubResource("StyleBoxFlat_0u6b5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hf3n6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u4kki")
+text = "Play"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_rk22q")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/focus = SubResource("StyleBoxFlat_0u6b5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xg1py")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u4kki")
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_rk22q")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/focus = SubResource("StyleBoxFlat_0u6b5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xg1py")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u4kki")
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -156.0
+offset_top = 90.0
+offset_right = 157.0
+offset_bottom = 150.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_0u6b5")
+theme_override_font_sizes/font_size = 52
+text = "Jerry Bingbong"
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

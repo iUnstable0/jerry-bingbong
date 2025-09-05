@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqxqtwbg4pinr"
+path="res://.godot/imported/jerry bingbong credits v1.mp3-55980ea5b5faaa99f3ed11555c0c9183.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/jerry bingbong credits v1.mp3"
+dest_files=["res://.godot/imported/jerry bingbong credits v1.mp3-55980ea5b5faaa99f3ed11555c0c9183.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

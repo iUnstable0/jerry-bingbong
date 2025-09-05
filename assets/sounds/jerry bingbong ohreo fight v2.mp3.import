@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdxu2w4ktfikt"
+path="res://.godot/imported/jerry bingbong ohreo fight v2.mp3-76693b1f4e8f187de9648f8833cf23b8.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/jerry bingbong ohreo fight v2.mp3"
+dest_files=["res://.godot/imported/jerry bingbong ohreo fight v2.mp3-76693b1f4e8f187de9648f8833cf23b8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
